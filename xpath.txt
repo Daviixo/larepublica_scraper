@@ -1,0 +1,9 @@
+Los H2 no se interpretan adecuadamente. Por ende, se usa:
+
+========> text-fill <========
+
+Links = $x('//text-fill[not(@class)]/a/@href')
+Title = $x('//div/span[contains(@class,"kicker")]/following-sibling::text-fill/span/text()')
+Summary = $x('//div[@class="lead"]/p/text()')
+Author = $x('//div[@class="author-article"]/div/button/text()')
+Body =  $x('//div[@class="html-content"]/p[not(@class)]/text()')
