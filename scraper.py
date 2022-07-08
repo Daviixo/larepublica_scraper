@@ -29,6 +29,7 @@ def parse_notice(link, today):
                 author = parsed.xpath(XPATH_AUTHOR)[0]
                 author = author.replace('\'',"").replace('[',"").replace(']',"")
             except IndexError:
+                print("Under index error -> " + IndexError)
                 return
 
             with open(f'{today}/{title}.txt', 'w', encoding='utf-8') as f:
